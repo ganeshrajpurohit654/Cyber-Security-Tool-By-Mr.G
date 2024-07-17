@@ -57,8 +57,8 @@ echo 8) Connect to RDP Session
 echo 9) List all the Tasks(programmes)
 echo 10) Terminate Task using PID/Image name
 echo 11) Exit
-echo 12) Connect with me :)
-echo 99) Update Tool
+echo 12) Update Tool
+echo 13) Connect with me :)
 echo.
 set /p input="Choose an Option:"
 echo.
@@ -177,14 +177,7 @@ if "%input%" EQU "6" (
     exit
  )
 
- if "%input%" EQU "12" "00"(
-    start https://www.instagram.com/anons656
-    pause
-    cls
-    goto menu
- )
-
- if "%input%" EQU "13" (
+if "%input%" EQU "12" (
     rem Update Script
     echo Updating Script...
     rem Download the updated script
@@ -196,3 +189,10 @@ if "%input%" EQU "6" (
     cls
     goto menu
 )
+
+ if "%input%" EQU "13" "00"(
+    start https://www.instagram.com/anons656
+    pause
+    cls
+    goto menu
+ )
