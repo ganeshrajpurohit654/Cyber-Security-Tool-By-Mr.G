@@ -184,7 +184,7 @@ if "%input%" EQU "6" (
     goto menu
  )
 
- if "%input%" EQU "99" (
+ if "%input%" EQU "13" (
     rem Update Script
     echo Updating Script...
     rem Download the updated script
