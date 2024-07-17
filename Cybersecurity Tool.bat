@@ -58,7 +58,7 @@ echo 9) List all the Tasks(programmes)
 echo 10) Terminate Task using PID/Image name
 echo 11) Exit
 echo 12) Connect with me :)
-echo 00) Update Tool
+echo 99) Update Tool
 echo.
 set /p input="Choose an Option:"
 echo.
@@ -177,14 +177,14 @@ if "%input%" EQU "6" (
     exit
  )
 
- if "%input%" EQU "12" "99"(
+ if "%input%" EQU "12" "00"(
     start https://www.instagram.com/anons656
     pause
     cls
     goto menu
  )
 
- if "%input%" EQU "00" (
+ if "%input%" EQU "99" (
     rem Update Script
     echo Updating Script...
     rem Download the updated script
