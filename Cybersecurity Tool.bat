@@ -46,7 +46,6 @@ echo                           ----------------
 echo                                     ~Ganesha 
 echo ============================================
 echo.
-echo 0) Update Tool
 echo 1) Ping a Target
 echo 2) Display System Information
 echo 3) Display Network Statics/ports of System
@@ -59,6 +58,7 @@ echo 9) List all the Tasks(programmes)
 echo 10) Terminate Task using PID/Image name
 echo 11) Exit
 echo 12) Connect with me :)
+echo 00) Update Tool
 echo.
 set /p input="Choose an Option:"
 echo.
@@ -184,7 +184,7 @@ if "%input%" EQU "6" (
     goto menu
  )
 
- if "%input%" EQU "0" (
+ if "%input%" EQU "00" (
     rem Update Script
     echo Updating Script...
     rem Download the updated script
