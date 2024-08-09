@@ -42,7 +42,7 @@ ping 127.0.0.1 -n 1 -w 800 > nul
 echo.
 echo Update worked as hell
 echo ============================================
-echo Cybersecurity Tool V1.1   (For Windows Only)
+echo Cybersecurity Tool V10.1   (For Windows Only)
 echo                           ----------------
 echo                                     ~Ganesha 
 echo ============================================
