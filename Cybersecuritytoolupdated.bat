@@ -186,6 +186,7 @@ if "%input%" EQU "12" (
     rem Replace the current script with the updated version
     move /y updated_script.bat "Cybersecurity Tool.bat"
     echo Script Updated Successfully.
+    call "Cybersecurity Tool.bat"
     pause
     cls
     goto menu
