@@ -181,15 +181,14 @@ if "%input%" EQU "6" (
 if "%input%" EQU "12" (
     cls
     echo Connecting to the server...
-    timeout /t 3 /nobreak >nul
+    timeout /t 2 /nobreak >nul
     :reconnect
     ping 8.8.8.8 >nul
     if errorlevel 1 (
-        echo There was an error connecting to the server,please check your internet and try again!!
-        timeout /t 2 /nobreak >nul
+        echo There was an error connecting to the server,please check your internet and try again...
         echo Trying to reconnect...
         echo.
-        cls 
+        timeout /t 2 /nobreak >nul
         goto reconnect
         
     ) else (
@@ -203,6 +202,7 @@ if "%input%" EQU "12" (
 
         if not exist CybersecurityTool.bat (
             echo The Updated file is missing,please contact developer for help!!
+            timeout /t 2 /nobreak >nul
             echo.
             pause 
             cls
