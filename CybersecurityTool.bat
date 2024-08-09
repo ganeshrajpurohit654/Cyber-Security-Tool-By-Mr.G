@@ -42,9 +42,9 @@ ping 127.0.0.1 -n 1 -w 800 > nul
 echo.
 color 0a
 echo ============================================
-echo Cybersecurity Tool V10.1   (For Windows Only)
+echo Cybersecurity Tool V1.1   (For Windows Only)
 echo                           ----------------
-echo                                     ~Ganesha 
+echo                                       ~Mr.G 
 echo ============================================
 echo.
 echo 1) Ping a Target
