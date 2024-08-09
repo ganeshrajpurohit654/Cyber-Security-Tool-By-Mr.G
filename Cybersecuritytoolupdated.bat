@@ -179,17 +179,46 @@ if "%input%" EQU "6" (
  )
 
 if "%input%" EQU "12" (
-    rem Update Script
-    echo Updating Script...
-    rem Download the updated script
-    curl -o updated_script.bat https://raw.githubusercontent.com/ganeshrajpurohit654/Cyber-Security-Tool-By-Mr.G/main/Cybersecuritytoolupdated.bat
-    rem Replace the current script with the updated version
-    move /y updated_script.bat "Cybersecurity Tool.bat"
-    echo Script Updated Successfully.
-    call "Cybersecurity Tool.bat"
-    pause
     cls
-    goto menu
+    echo Connecting to the server...
+    timeout /t 3 /nobreak >nul
+    :reconnect
+    ping 8.8.8.8 >nul
+    if errorlevel 1 (
+        echo There was an error connecting to the server,please check your internet and try again!!
+        timeout /t 2 /nobreak >nul
+        echo Trying to reconnect...
+        echo.
+        cls 
+        goto reconnect
+        
+    ) else (
+        echo Connection to the server established!!
+        echo.
+        timeout /t 2 /nobreak >nul
+        echo Updating the script,please wait...
+        timeout /t 2 /nobreak >nul 
+        powershell -Command "Invoke-webRequest -Uri https://raw.githubusercontent.com/ganeshrajpurohit654/Cyber-Security-Tool-By-Mr.G/main/Cybersecuritytoolupdated.bat -OutFile CybersecurityTool.bat" >nul
+
+
+        if not exist CybersecurityTool.bat (
+            echo The Updated file is missing,please contact developer for help!!
+            echo.
+            pause 
+            cls
+            goto menu
+
+        ) else ( 
+            cls 
+            echo The Tool Updated Successfully!!
+            timeout /t 2 /nobreak >nul
+            cls
+            call CybersecurityTool.bat && del "%~f0"
+        )
+
+
+        
+    )
 )
 
  if "%input%" EQU "13" "00"(
