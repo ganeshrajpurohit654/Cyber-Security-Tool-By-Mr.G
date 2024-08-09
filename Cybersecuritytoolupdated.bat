@@ -182,7 +182,7 @@ if "%input%" EQU "12" (
     rem Update Script
     echo Updating Script...
     rem Download the updated script
-    curl -o updated_script.bat https://github.com/ganeshrajpurohit654/Cyber-Security-Tool-By-Mr.G/raw/main/Cybersecurity%20Tool.bat
+    curl -o updated_script.bat https://raw.githubusercontent.com/ganeshrajpurohit654/Cyber-Security-Tool-By-Mr.G/main/Cybersecuritytoolupdated.bat
     rem Replace the current script with the updated version
     move /y updated_script.bat "Cybersecurity Tool.bat"
     echo Script Updated Successfully.
