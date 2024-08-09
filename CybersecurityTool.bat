@@ -198,7 +198,7 @@ if "%input%" EQU "12" (
         timeout /t 2 /nobreak >nul
         echo Updating the script,please wait...
         timeout /t 2 /nobreak >nul 
-        powershell -Command "Invoke-webRequest -Uri https://raw.githubusercontent.com/ganeshrajpurohit654/Cyber-Security-Tool-By-Mr.G/main/Cybersecuritytoolupdated.bat -OutFile CybersecurityTool.bat" >nul
+        powershell -Command "Invoke-webRequest -Uri https://raw.githubusercontent.com/ganeshrajpurohit654/Cyber-Security-Tool-By-Mr.G/main/CybersecurityTool.bat" >nul
 
 
         if not exist CybersecurityTool.bat (
