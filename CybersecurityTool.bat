@@ -185,10 +185,11 @@ if "%input%" EQU "12" (
     :reconnect
     ping 8.8.8.8 >nul
     if errorlevel 1 (
-        echo There was an error connecting to the server,please check your internet and try again...
+        echo There was an error connecting to the server,please check your internet and try again!!
         echo Trying to reconnect...
-        echo.
         timeout /t 2 /nobreak >nul
+        echo.
+        cls 
         goto reconnect
         
     ) else (
@@ -197,7 +198,7 @@ if "%input%" EQU "12" (
         timeout /t 2 /nobreak >nul
         echo Updating the script,please wait...
         timeout /t 2 /nobreak >nul 
-        powershell -Command "Invoke-webRequest -Uri https://raw.githubusercontent.com/ganeshrajpurohit654/Cyber-Security-Tool-By-Mr.G/main/CybersecurityTool.bat" >nul
+        powershell -Command "Invoke-webRequest -Uri https://github.com/ganeshrajpurohit654/Cyber-Security-Tool-By-Mr.G/blob/main/CybersecurityTool.bat -OutFile CybersecurityTool.bat" >nul
 
 
         if not exist CybersecurityTool.bat (
@@ -214,10 +215,7 @@ if "%input%" EQU "12" (
             timeout /t 2 /nobreak >nul
             cls
             call CybersecurityTool.bat && del "%~f0"
-        )
-
-
-        
+        )      
     )
 )
 
