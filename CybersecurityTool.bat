@@ -40,7 +40,7 @@ ping 127.0.0.1 -n 1 -w 800 > nul
 echo 888       888 888  Y8P  "Y8888P88 
 ping 127.0.0.1 -n 1 -w 800 > nul
 echo.
-echo Update worked as hell
+color 0a
 echo ============================================
 echo Cybersecurity Tool V10.1   (For Windows Only)
 echo                           ----------------
