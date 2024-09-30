@@ -24,7 +24,7 @@ echo.
 color 0a
 echo ============================================
 echo Cybersecurity Tool [V-1.1]   (For Windows Only)
-echo                           ----------------
+echo                               ----------------
 echo                                       ~Mr.G 
 echo ============================================
 echo.
