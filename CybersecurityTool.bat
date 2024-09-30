@@ -1,28 +1,9 @@
 @echo off
 setlocal enabledelayedexpansion
 title Cybersecurity Tool
-set attemps=0
-:inputpasskey
-if "%attempts%" GEQ "4" (
-echo too many failed attempts, Try again later...
-echo Connecting you to Developer please wait..
-timeout /t 5 /nobreak > nul
-start https://www.instagram.com/anons656/
-exit /b 
-)
-set /p passkey="Enter Your Passkey:"
-if "%passkey%" NEQ "Ganesha" (
-set /a attempts+=1
-echo Wrong Passkey,Try again...
-echo.
-timeout /t 2 /nobreak > nul
-goto inputpasskey
-)
-echo Access Granted!!
-timeout /t 2 /nobreak > nul
-cls
 goto menu
 :menu
+cls
 echo 888b     d888           .d8888b.
 ping 127.0.0.1 -n 1 -w 800 > nul 
 echo 8888b   d8888          d88P  Y88b
@@ -42,7 +23,7 @@ ping 127.0.0.1 -n 1 -w 800 > nul
 echo.
 color 0a
 echo ============================================
-echo Cybersecurity Tool V1.1   (For Windows Only)
+echo Cybersecurity Tool [V-1.1]   (For Windows Only)
 echo                           ----------------
 echo                                       ~Mr.G 
 echo ============================================
