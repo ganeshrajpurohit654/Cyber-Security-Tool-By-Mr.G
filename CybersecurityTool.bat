@@ -21,26 +21,27 @@ ping 127.0.0.1 -n 1 -w 800 > nul
 echo 888       888 888  Y8P  "Y8888P88 
 ping 127.0.0.1 -n 1 -w 800 > nul
 echo.
-color 0a
+color 0B
 echo ============================================
-echo Cybersecurity Tool [V-1.1]   (For Windows Only)
+echo Cybersecurity Tool [V-1.2]   (For Windows Only)
 echo                               ----------------
 echo                                       ~Mr.G 
 echo ============================================
 echo.
-echo 1) Ping a Target
-echo 2) Display System Information
-echo 3) Display Network Statics/ports of System
-echo 4) Display Route Packets to Destination of a Target
-echo 5) Display Network Connections
-echo 6) Connect to SSH Sever (Get SSH session)
-echo 7) Connect to FTP Server (Get FTP session)
-echo 8) Connect to RDP Session
-echo 9) List all the Tasks(programmes)
-echo 10) Terminate Task using PID/Image name
-echo 11) Exit
-echo 12) Update Tool
-echo 13) Connect with me :)
+echo            1) Ping a Target
+echo            2) Display System Information
+echo            3) Display Network Statics/ports of System
+echo            4) Display Route Packets to Destination of a Target
+echo            5) Display Network Connections
+echo            6) Connect to SSH Sever (Get SSH session)
+echo            7) Connect to FTP Server (Get FTP session)
+echo            8) Connect to RDP Session
+echo            9) List all the Tasks(programmes)
+echo           10) Terminate Task using PID/Image name
+echo           11) Exit
+echo           12) Update Tool
+echo           13) Connect with me :)
+echo           14) More Tools
 echo.
 set /p input="Choose an Option:"
 echo.
@@ -206,3 +207,10 @@ if "%input%" EQU "12" (
     cls
     goto menu
  )
+if "%input%" EQU "14" (
+    echo Connecting you to Tools Stuff by Mr.G
+    echo Kindly give a start to my repo if you like it :)
+    timeout /t 4 /nobreak >nul
+    start https://github.com/ganeshrajpurohit654/
+    goto menu
+)
