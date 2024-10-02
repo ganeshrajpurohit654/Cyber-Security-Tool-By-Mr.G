@@ -201,17 +201,17 @@ if "%input%" EQU "12" (
     )
 )
 
- if "%input%" EQU "13" "00"(
+ if "%input%" EQU "13" (
     start https://www.instagram.com/anons656
     pause
     cls
     goto menu
  )
 
-  if "%input%" EQU "14" (
+ if "%input%" EQU "14" (
     echo Connecting you to Tools Stuff by Mr.G
     echo Kindly give a start to my repo if you like it.
     timeout /t 4 /nobreak >nul
     start https://github.com/ganeshrajpurohit654/
     goto menu
-)
+ )
